@@ -1,1 +1,1 @@
-"#Ohjelmoinnin Perusteet" 
+Olen Nina Hinkkanen, opiskelen ensimmäistä vuotta LAB:issa tieto-, ja viestintätekniikan inssiksi. Alla minulla on tivin perustutkinto, sekä kokemusta olen päässyt kerryttämään alalla Meitalla tietoturva asiantuntija harjoittelijana, sekä Saksassa Tokiwa Softwarella ohjelmistokehittäjä harjoittelijana. Git ja Github minulle on ennestään tuttuja, taidot hieman ruosteessa.
