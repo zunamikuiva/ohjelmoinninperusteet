@@ -19,19 +19,19 @@ if inspection < start or inspection > stop:
 
 if not error:
     print("\nFirst loop - inspection with break:")
-    first_numbers = []
     for i in range(start, stop):
         if i == inspection:
             break
-        first_numbers.append(str(i))
-    print(" ".join(first_numbers))
+        else:
+            print(i, end=' ')
 
-    print("Second loop - inspection with continue:")
-    second_numbers = []
+    print("\nSecond loop - inspection with continue:")
     for i in range(start, stop):
         if i == inspection:
             continue
-        second_numbers.append(str(i))
-    print(" ".join(second_numbers))
+        else:
+            if(i == stop):
+                print(i)
+            print(i, end=' ')
 
 print("\nProgram ending.")
