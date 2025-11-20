@@ -4,7 +4,6 @@
 import random
 random.seed(1234)
 
-# ASCII art for rock, paper, scissors
 ROCK = """
     _______
 ---'   ____)
@@ -46,17 +45,14 @@ def determineWinner(player_choice: int, bot_choice: int, player_name: str):
         names = {1: "rock", 2: "paper", 3: "scissors"}
         return "draw", f"Draw! Both players chose {names[player_choice]}."
 
-    # Win / loss logic
     names = {1: "rock", 2: "paper", 3: "scissors"}
 
-    # Player wins scenarios
     if (player_choice == 1 and bot_choice == 3) or \
        (player_choice == 2 and bot_choice == 1) or \
        (player_choice == 3 and bot_choice == 2):
         reason = f"{player_name} {names[player_choice]} beats RPS-3PO {names[bot_choice]}."
         return "win", reason
 
-    # Otherwise bot wins
     reason = f"RPS-3PO {names[bot_choice]} beats {player_name} {names[player_choice]}."
     return "loss", reason
 
@@ -96,25 +92,21 @@ def main():
 
         print("Rock! Paper! Scissors! Shoot!\n")
 
-        # Bot choice
         bot_choice = random.randint(1, 3)
 
         hashes = "#" * 25
 
-        # Player's choice result
         names = {1: "rock", 2: "paper", 3: "scissors"}
         print(hashes)
         print(f"{name} chose {names[choice]}.\n")
         print(getChoiceArt(choice))
         print(hashes)
 
-        # Bot's choice result
         print(f"RPS-3PO chose {names[bot_choice]}.\n")
         print(getChoiceArt(bot_choice))
         print(hashes)
         print()
 
-        # Determine the winner
         result, message = determineWinner(choice, bot_choice, name)
 
         if result == "win":
